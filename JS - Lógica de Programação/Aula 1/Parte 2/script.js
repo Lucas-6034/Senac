@@ -14,7 +14,7 @@ const expressaoOr = true || false || false;
 console.log(expressaoOr); // Retorna true, pois o JS encontrou um valor verdadeiro.
 
 const negaExpressao = true && true;
-console.log(!negaExpressao); // Retorna false, pois o negamos a expressao com o operador !.
+console.log(!negaExpressao); // Retorna false, pois o negamos a expressao com o operador !.a
 
 ////////////////////////////////////////////
 

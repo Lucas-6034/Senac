@@ -1,0 +1,70 @@
+:root{
+    --corPrimaria: #00aeff;
+    --corPrimariaEscura: #0079b1;
+    --corSecundaria: #4abd4e;
+    --corTerciaria: #cd5252;
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: var(--corPrimaria);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+form input:focus{
+    border: 0;
+    outline: 2px solid var(--corPrimaria);
+}
+form button {
+    border: none;
+    background: var(--corPrimaria);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+form button:hover, form button:active{
+    background: var(--corPrimariaEscura);
+}
+form .paragrafo-resultado{
+    background: var(--corSecundaria);
+    color: #317d33;
+}
+form .paragrafo-invalido{
+    background: var(--corTerciaria);
+    color: #712d2d;
+}
+form .paragrafo-resultado, form .paragrafo-invalido{
+    padding: 10px 20px;
+}

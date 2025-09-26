@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC: Calculo do Indice de Massa Corporal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container"> <!-- Cria secao com a classe container -->
+        <h1>Tabela IMC</h1> <!-- Titulo da pagina com Id formulario -->
+        <form id="formulario" action="/" method="POST"> <!-- Formulario com metodo Post -->
+            <label for="peso">Peso</label>
+            <input id="peso" type="text" name="peso"> <!-- Input que sera capturado pelo JS -->
+            <label for="altura">Altura</label>
+            <input id="altura" type="text" name="altura"><!-- Input que sera capturado pelo JS -->
+            <button type="submit">Calcular</button>
+            <div id="resultado"></div> <!-- Div que sera manipulada por JS -->
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -18,5 +18,5 @@ function gerarSenha() { // Declara a funcao gerarSenha que sera executada ao cli
         senha = senha + caracteres[indiceAleatorio]; // Concatena o indiceAletorio gerado com a senha 
         contador = contador + 1; // Adiciona um contador +1 para identificar em qual indice a senha esta
     }
-    document.getElementById("resultado").innerText = "Sua senha foi gerada com sucesso! " + senha; // Imprime a senha dentro da div resultado 
+    document.getElementById("resultado").innerHTML = `Sua senha foi gerada com sucesso! <br> Sua senha é: ` + senha; // Imprime a senha dentro da div resultado 
 }

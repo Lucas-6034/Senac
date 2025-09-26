@@ -27,7 +27,7 @@
 // Se nenhuma das condicoes forem verdadeiras, imprime: 'O dia tem apenas 24 horas.'
 // IMPRIMIR = console.log('');
 
-const hora = 100;
+const hora = 20;
 if (hora >= 0 && hora <= 11){
     console.log(`Bom dia!`);
 } else if (hora >= 12 && hora <= 18){
@@ -36,13 +36,4 @@ if (hora >= 0 && hora <= 11){
     console.log(`Boa Noite!`);
 } else {
     console.log(`O dia tem apenas 24 horas.`);
-}
-
-const pessoa = 'Lucas';
-const onibus = true;
-
-if(pessoa && !onibus){
-    console.log('Lucas perdeu o onibus');
-} else {
-    console.log('Lucas pegou o onibus');
 }

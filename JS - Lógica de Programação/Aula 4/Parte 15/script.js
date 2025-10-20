@@ -23,7 +23,7 @@ function mostrarHora(){
 // 1000 milissegundos equivale a 1 segundo
 const timer = setInterval(function(){
     console.log(mostrarHora()); // Mostra a hora atual a cada 1 segundo
-});
+}, 1000);
 // O código acima vai rodar para sempre... a menos que a gente pare ele.
 // Para isso, usamos o clearInterval() dentro de um setTimeout().
 

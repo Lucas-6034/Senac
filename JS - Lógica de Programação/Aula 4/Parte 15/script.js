@@ -36,3 +36,8 @@ setTimeout(function(){
 // RODANDO UM CÓDIGO APÓS 6 SEGUNDOS, APENAS UMA VEZ
 // Somente para exibir uma mensagem separada (esse código vai rodar antes do código acima).
 setTimeout(function(){console.log('Olá Mundo!');}, 6000);
+
+
+
+
+a

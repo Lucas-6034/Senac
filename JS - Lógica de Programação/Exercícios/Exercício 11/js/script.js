@@ -71,7 +71,7 @@ const frases = [
     "Todo grande sonho começa com um pequeno passo.",
     "A persistência é o caminho do exito.",
     "Você pode mais do que imagina!",
-    "Cada dia é uma nova chancve para fazer melhor!"
+    "Cada dia é uma nova chance para fazer melhor!"
 ];
 
 const botao = document.querySelector(`#botao`);

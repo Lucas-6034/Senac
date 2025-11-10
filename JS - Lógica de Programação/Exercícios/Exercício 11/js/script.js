@@ -62,24 +62,3 @@ Utilizem as aulas anteriores como base para esse exercício.
         Commit com mensagem: Adiciona projeto Painel de Frases Motivacionais
         Push origin
 */
-
-//////////////Solução//////////////
-
-const frases = [
-    "Acredite no seu potencial!",
-    "Você é capaz de ir além!",
-    "Todo grande sonho começa com um pequeno passo.",
-    "A persistência é o caminho do exito.",
-    "Você pode mais do que imagina!",
-    "Cada dia é uma nova chance para fazer melhor!"
-];
-
-const botao = document.querySelector(`#botao`);
-const frase = document.querySelector(`#frase`);
-
-function gerarFrase(){
-    const indiceAleatorio = Math.floor(Math.random() * frases.length);
-    frase.innerText = frases[indiceAleatorio];
-};
-
-botao.addEventListener('click', gerarFrase);

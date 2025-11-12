@@ -1,7 +1,5 @@
 /* 
 Vocês devem criar uma página web que calcule o valor final de um produto com base na forma de pagamento escolhida.
-Ao final, o projeto deve ser publicado no GitHub.
-Utilizem as aulas anteriores como base para esse exercício.
 
 1) Estrutura do projeto
     Crie uma pasta chamada calculadora-descontos.
@@ -9,9 +7,7 @@ Utilizem as aulas anteriores como base para esse exercício.
         index.html
         pasta "css" > style.css
         pasta "js" > script.js
-
-2) HTML
-    Monte uma estrutura básica:
+2) HTML - Monte uma estrutura básica:
         Um título principal com o nome "Calculadora de Descontos"
         Um campo de input para digitar o valor do produto
         Um campo select com as opções:
@@ -21,18 +17,13 @@ Utilizem as aulas anteriores como base para esse exercício.
             Parcelado em 3x ou mais - acréscimo de 10%
         Um botão "Calcular valor final"
         Uma div <div id="resultado"></div> para mostrar o resultado
-
 3) CSS
     Deixem a página organizada e responsiva:
-        Fundo colorido com gradiente
-        Caixa centralizada e com sombra leve
-        Inputs e select com bordas arredondadas
-        Botão com cor de destaque e efeito hover
+        Estilize da sua forma, seja criativo!
         Texto de resultado com cores diferentes dependendo do tipo:
             Verde para desconto
             Vermelho para acréscimo
             Laranja para sem desconto
-
 4) JavaScript
     No arquivo script.js:
         Capture os elementos HTML com document.querySelector.

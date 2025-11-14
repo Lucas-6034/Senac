@@ -67,6 +67,7 @@ function calcularValorFinal(){
     let valorFinal = preco;
     let mensagem = "";
     let classe = "";
+    let valorParcelado = "";
 
     if(pagamento === 'avista'){
         valorFinal = preco * 0.9;
@@ -78,11 +79,15 @@ function calcularValorFinal(){
         classe = 'semDesconto';
     } else if(pagamento === '2x'){
         valorFinal = preco * 1.05;
-        mensagem = "Compra realizada em 2x, acrescimo de 5%.";
+        valorParcelado = valorFinal / 2;
+        mensagem = `Compra realizada em 2x, acrescimo de 5%.
+        Valor de cada parcela: ${valorParcelado}`;
         classe = 'acrescimo';
     } else if(pagamento === '3x'){
         valorFinal = preco * 1.10;
-        mensagem = "Compra realizada em 3x, acrescimo de 10%";
+        valorParcelado = valorFinal / 3;
+        mensagem = `Compra realizada em 3x, acrescimo de 10%
+        Valor de cada parcela: ${valorParcelado}`;
         classe = 'acrescimo';
     }
 

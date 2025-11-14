@@ -81,13 +81,13 @@ function calcularValorFinal(){
         valorFinal = preco * 1.05;
         valorParcelado = valorFinal / 2;
         mensagem = `Compra realizada em 2x, acrescimo de 5%.
-        Valor de cada parcela: ${valorParcelado}`;
+        Valor de cada parcela: ${valorParcelado.toFixed(2).replace('.', ',')}`;
         classe = 'acrescimo';
     } else if(pagamento === '3x'){
         valorFinal = preco * 1.10;
         valorParcelado = valorFinal / 3;
         mensagem = `Compra realizada em 3x, acrescimo de 10%
-        Valor de cada parcela: ${valorParcelado}`;
+        Valor de cada parcela: ${valorParcelado.toFixed(2).replace('.', ',')}`;
         classe = 'acrescimo';
     }
 

@@ -67,7 +67,7 @@ function calcularValorFinal(){
     let valorFinal = preco;
     let mensagem = "";
     let classe = "";
-    let valorParcelado = "";
+    let valorParcelado;
 
     if(pagamento === 'avista'){
         valorFinal = preco * 0.9;

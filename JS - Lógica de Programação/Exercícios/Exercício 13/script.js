@@ -1,5 +1,5 @@
 /*
-Painel de Controle de Metas
+Painel de Controle de Metas/Tarefas
 
 Vocês vão criar uma página interativa para registrar metas(tarefas) e marcar quando forem concluídas.
 Ao final, o projeto deve ser publicado no GitHub.

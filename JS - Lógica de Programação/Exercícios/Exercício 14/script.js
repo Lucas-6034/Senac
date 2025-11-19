@@ -17,7 +17,6 @@ Utilizem tudo o que já aprendemos em aula com os outros exercícios e o trabalh
             Um título principal: "Sistema de Votação de Personagens"
         Main:
             Uma section central contendo:
-                Um texto explicativo curto dizendo que cada aluno poderá votar apenas escolhendo um "personagem" da lista
                 Um elemento <select> com pelo menos quatro personagens diferentes
                 Um botão "Votar"
                 Uma div vazia com a classe erro, onde serão exibidas mensagens de erro

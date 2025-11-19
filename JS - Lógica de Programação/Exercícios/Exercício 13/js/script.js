@@ -162,7 +162,7 @@ function adicionarMeta(e){
         }
     });
 
-    // Botão Rermover
+    // Botão Remover
     const btnRemover = document.createElement('button');
     btnRemover.innerText = '×';
     btnRemover.classList.add('btn', 'btn-remover');
@@ -171,11 +171,11 @@ function adicionarMeta(e){
         li.remove();
     });
 
-    // Adiciona botões ao elemento criado
+    // Adiciona botões para a li criada
     li.appendChild(btnConcluir);
     li.appendChild(btnRemover);
 
-    // Adiciona meta ao elemento
+    // Adiciona meta a lista de metas
     listaMetas.appendChild(li);
 
     // Limpa o formulário

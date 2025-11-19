@@ -96,3 +96,92 @@ Utilizem tudo o que já aprendemos em aula com os outros exercícios e o trabalh
             Push origin
     OBSERVAÇÃO: TODOS AS ATIVIDADES AGORA SERÃO REALIZADAS DENTRO DA PASTA SENAC QUE FOI CRIADA
 */
+
+////////////////// SOLUÇÃO //////////////////
+
+// Captura elementos do formulário
+const form = document.querySelector('#formulario');
+const campoTitulo = document.querySelector('#titulo');
+const campoDescricao = document.querySelector('#descricao');
+const campoPrioridade = document.querySelector('#prioridade');
+const campoData = document.querySelector('#data');
+const btnAdicionar = document.querySelector('#btn-adicionar');
+const erro = document.querySelector('#erro');
+const listaMetas = document.querySelector('#lista-metas');
+
+// Cria função adicionar meta
+function adicionarMeta(e){
+
+    // Previne comportamento padrão
+    e.preventDefault();
+    
+    // Limpa div de erro
+    erro.innerText = "";
+
+    // Captura valor dos campos do formulário
+    const titulo = campoTitulo.value.trim();
+    const descricao = campoDescricao.value.trim();
+    const prioridade = campoPrioridade.value;
+    const data = campoData.value;
+    
+    // Cria uma constante que captura a data atual
+    const hoje = new Date().toISOString().split('T')[0];
+
+    // Exibe mensagem de erro caso algum campo esteja vazio
+    if (!titulo || !descricao || !prioridade || !data  || data < hoje){
+        erro.innerText = 'Preencha os campos corretamente.';
+        return;
+    }
+
+    // Cria elemento li com a meta
+    const li = document.createElement('li');
+    li.classList.add(prioridade);
+
+    li.innerHTML = `
+                    <div class="item-lista">
+                        <h3>${titulo}</h3>
+                        <p>${descricao}</p>
+                        <p><b>Prioridade: </b>${prioridade}</p>
+                        <p><b>Data: </b>${data}</p>
+                    </div>
+                    `;
+
+    // Cria botões
+    // Botão Concluir
+    const btnConcluir = document.createElement('button');
+    btnConcluir.innerText = '✓';
+    btnConcluir.classList.add('btn', 'btn-concluir');
+
+    btnConcluir.addEventListener('click', function(){
+        if (li.classList.contains('concluida')){
+            li.classList.remove('concluida');
+            btnConcluir.innerText = '✓';
+        } else {
+            li.classList.add('concluida');
+            btnConcluir.innerText = '⏎';
+        }
+    });
+
+    // Botão Rermover
+    const btnRemover = document.createElement('button');
+    btnRemover.innerText = '×';
+    btnRemover.classList.add('btn', 'btn-remover');
+
+    btnRemover.addEventListener('click', function(){
+        li.remove();
+    });
+
+    // Adiciona botões ao elemento criado
+    li.appendChild(btnConcluir);
+    li.appendChild(btnRemover);
+
+    // Adiciona meta ao elemento
+    listaMetas.appendChild(li);
+
+    // Limpa o formulário
+    form.reset();
+
+}
+
+// Adiciona evento de click ao botão de adicionar
+btnAdicionar.addEventListener('click', adicionarMeta);

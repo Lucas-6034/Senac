@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Metas e Tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Metas e Tarefas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicionar Meta ou Tarefa</h2>
+            <form id="formulario">
+                <label>Título da meta</label>
+                <input id="titulo" type="text" placeholder="Digite o nome ou título da Meta/Tarefa">
+                <label>Descrição</label>
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+                <label>Prioridade</label>
+                <select id="prioridade">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <label>Data</label>
+                <input type="date" id="data">
+                <button id="btn-adicionar">Adicionar Meta</button>
+            </form>
+            <div id="erro" class="erro"></div>
+        </section>
+        <section id="lista">
+            <ul id="lista-metas"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>Nome Aluno - 19/11</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
